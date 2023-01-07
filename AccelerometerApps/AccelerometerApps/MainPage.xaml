@@ -19,7 +19,9 @@
                     Clicked="ButtonStart_Clicked"/>
                 <Button Grid.Row="3" Grid.Column="1" Text="Stop" x:Name="ButtonStop"
                     Clicked="ButtonStop_Clicked"/>
-
+                <Entry Grid.Row="5" Grid.Column="0" Text="" Placeholder="Phone Number" x:Name="EntryNumber"/>
+                <Button Grid.Row="7" Grid.Column="0" Text="Open Phone Dialer" x:Name="ButtonDialer"
+                    Clicked="ButtonDialer_Clicked"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

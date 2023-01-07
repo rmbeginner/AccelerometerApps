@@ -38,5 +38,18 @@ namespace AccelerometerApps
             Accelerometer.ReadingChanged -= Accelerometer_ReadingChanged;
             Accelerometer.Stop();
         }
+
+        private void ButtonDialer_Clicked(object sender, EventArgs e)
+        {
+            try
+            {   
+                PhoneDialer.Open(EntryNumber.Text);
+            }
+            
+            catch (Exception ex)
+            {
+                DisplayAlert("unable to make call", "Please enter a number", "OK");
+            }
+        }
     }
 }
